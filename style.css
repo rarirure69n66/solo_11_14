@@ -21,6 +21,29 @@ body{
 
 }
 
+
+/* 画像を縦に2枚配置 */
+.image-gallery {
+    padding: 20px 25px;
+}
+
+.image-gallery img {
+    display: block;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 20px;
+}
+
+@media (max-width: 600px) {
+    .image-pair {
+        gap: 8px;
+    }
+
+    .image-pair img {
+        width: calc(50% - 4px);
+    }
+}
+
 .hero img{
 
     width:100%;
