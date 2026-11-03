@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DEPLOYMENT_2026_11_14</title>
+
+    <link rel="stylesheet" href="style.css">
+
+    <script defer>
+
+        window.addEventListener("load", () => {
+
+            document.querySelectorAll(".hero img").forEach((img, i) => {
+
+                setTimeout(() => {
+
+                    img.classList.add("show");
+
+                }, i * 300);
+
+            });
+
+        });
+
+        window.addEventListener("scroll", () => {
+
+            document.querySelectorAll(".fade").forEach(el => {
+
+                if (el.getBoundingClientRect().top < window.innerHeight - 100) {
+
+                    el.classList.add("show");
+
+                }
+
+            });
+
+        });
+
+    </script>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <section class="hero">
+
+        <img src="imgs/00.png" alt="">
+        <img src="imgs/01.png" alt="">
+        <img src="imgs/02.png" alt="">
+
+    </section>
+    
+    <div class="separator fade">
+	    <span></span>
+	</div>
+	
+    <section class="fade">
+
+
+        
+    <div class="separator fade">
+	    <span></span>
+	</div>
+        <p>        
+            新しい挑戦
+            新しい景色
+            新しい音楽
+
+            ここからまた始まります。
+                        
+            LENNY SOLO PROJECT
+            
+        </p>
+    </section>
+    
+
+    <div class="separator fade">
+	    <span></span>
+	</div>
+	
+    <section class="fade">
+
+        <h2>FOLLOW THE PROJECT</h2>
+
+        <p>
+            ライブ情報、制作状況、新曲
+            そして
+            『ライブ配信』
+            
+            その他活動情報
+            SNSにて随時更新していきます。
+        </p>
+
+        <div class="buttons">
+
+            <a href="https://x.com/rarirure69n66" target="_blank">X</a>
+            <a href="https://www.youtube.com/@win3100c" target="_blank">YouTube</a>
+            <a href="https://www.instagram.com/lenny69n66/" target="_blank">Instagram</a>
+            <p></p>
+
+        </div>
+
+    </section>
+    
+    <div class="separator fade">
+	    <span></span>
+	</div>
+	
+    <footer>
+    
+        <h3>
+        	Thank you for being here.<br>
+            See you at JUSO 246<br>
+            2026.11.14
+        </h3>
+
+    </footer>
+
+    <div class="separator fade">
+	    <span></span>
+	</div>
+	
+</div>
+
+</body>
+</html>
